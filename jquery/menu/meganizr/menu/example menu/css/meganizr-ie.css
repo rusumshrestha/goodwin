@@ -1,0 +1,27 @@
+/* ###################################################################
+	
+	ITEM NAME  : Meganizr Responsive CSS3 Mega Menu
+	ITEM URI   : http://codecanyon.net/item/meganizr-responsive-css3-mega-menu/2629504
+	VERSION    : 1.0.2
+	AUTHOR     : Valeriu Timbuc
+	AUTHOR URI : http://vtimbuc.net
+	LICENSE    : Regular License - http://codecanyon.net/licenses/regular_extended
+
+################################################################### */
+
+
+
+.meganizr > li > div,
+.meganizr > li > ul,
+.meganizr > li > ul li > ul {
+	overflow: visible;
+	visibility: visible;
+	display: none;
+}
+
+.meganizr > li.mzr-drop:hover > div,
+.meganizr > li.mzr-drop:hover > ul,
+.meganizr > li > ul li.mzr-drop:hover > ul { display: block; }
+
+.meganizr > li.mzr-home-dark,
+.meganizr > li.mzr-home-light { min-width: 50px; }

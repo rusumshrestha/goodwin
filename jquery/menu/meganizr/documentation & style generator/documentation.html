@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Documentation - Meganizr Responsive CSS3 Mega Menu</title>
+	<meta name="description" content="Meganizr is a user-friendly, highly customizable, flexible and easy to integrate solution to build your custom menus. It was build with pure CSS3 which makes it simple to get started but powerful enough to create highly customized and creative mega menus configurations.">
+	<meta name="author" content="Valeriu Timbuc">
+	<meta name="keywords" content="meganizr, mega, menu, dropdown, css3, html5, codecanyon, css, generator">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le styles -->
+	<link href="css/livepreview.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="10" id="top">
+
+	<!-- Navigation -->
+
+	<div class="subnav subnav-fixed">
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#top">Top</a></li>
+			<li><a href="#install">Installation</a></li>
+			<li><a href="#htmlmarkup">Menu HTML Markup</a></li>
+			<li><a href="#cssfiles">CSS Files and Structure</a></li>
+			<li><a href="#updates">Updates</a></li>
+			<li><a href="#credits">Credits</a></li>
+			<li><a href="index.html">Preview & Customization</a></li>
+		</ul>
+	</div>
+
+	<!-- Page Content -->
+
+	<div class="container" id="container">
+
+	<!-- Header -->
+
+	<header>
+		
+		<div class="pagination-centered top-header">
+			<h1 class="big">Meganizr Documentation</h1>
+			<br><br>
+			<p class="well lead">Thank you for purchasing this menu. If you have any questions that are beyond the scope of this help file, please feel free to submit a <a href="http://vtimbuc.ticksy.com/">support ticket</a>. Thank you!</p>
+
+		</div>
+
+		<hr class="soften">
+		
+	</header>
+
+	<!-- Instalation -->
+
+	<section id="install">
+
+		<div class="page-header"><h1>Installation</h1></div>
+
+		<p>It’s very easy and simple to implement this navigation menu on your website. You can use the live style generator, where you can set more than 20 options to create with no effort your custom menu and then click on “Get The Generated Code” button and follow the steps.</p>
+
+		<p>Make sure you include all the necessary files and folders, and the paths to the files are right.</p>
+
+		<p>If you don't want to use the generator, take a look at the examples code, and bellow snippets.</p>
+
+		<br>
+
+		<a href="http://www.youtube.com/watch?v=iFcrd5fmRG4" class="btn btn-info">Installation Video Tutorial</a>
+		
+	</section>
+
+	<!-- Menu HTML Markup -->
+
+	<section id="htmlmarkup">
+
+		<div class="page-header"><h1>Menu HTML Markup</h1></div>
+
+		<!-- Basic HTML Markup -->
+
+		<div class="row">
+			<div class="span12">
+				<h3>Basic HTML Markup</h3>
+				<p>To create your meganizr menu you only need to create an unordered list (<code>&lt;ul></code>) with the required class <code>.meganizr</code>. If you want to add more functionality to the menu you can use the following classes.</p>
+			</div>	
+		</div>
+
+		<div class="row">
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.modernizr</code></td>
+							<td>Load modernizr styles</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-slide</code></td>
+							<td>For slide transitions</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-fade</code></td>
+							<td>For fade in/out transitions</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-responsive</code></td>
+							<td>For responsive menu</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+
+			<div class="span6">
+<pre class="prettyprint linenums">&lt;ul class="meganizr">
+    &lt;!-- Menu Items Here -->
+&lt;/ul></pre>
+			</div>
+		
+		</div>
+
+		<hr>
+
+		<!-- Links with Home Icons -->
+
+		<div class="row">
+
+			<div class="span12">
+				<h3>Link with Home Icon</h3>
+				<p>To add a link with home icon instead of text use the class <code>.mzr-home-dark</code> for a dark icon and <code>.mzr-home-light</code> for a light icon.</p>
+			</div>
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.mzr-home-dark</code></td>
+							<td>Add the dark home icon</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-home-light</code></td>
+							<td>Add the light home icon</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+
+			<div class="span6">
+<pre class="prettyprint linenums">&lt;li class="mzr-home-dark">&lt;a href="#">Home&lt;/a>&lt;/li></pre>
+			</div>
+			
+		</div>
+
+		<hr>
+
+		<!-- Links with no dropdowns -->
+
+		<div class="row">
+
+			<div class="span12">
+				<h3>Normal Link (no dropdown)</h3>
+				<p>To add a normal link, no dropdowns, just add a new list item (<code>&lt;li></code>) with an anchor tag (<code>&lt;a></code>) inside.</p>
+			</div>
+
+			<div class="span12">
+<pre class="prettyprint linenums">&lt;li>&lt;a href="#">Normal Link&lt;/a>&lt;/li></pre>
+			</div>
+			
+		</div>
+
+		<hr>
+
+		<!-- Links with Mega Dropdowns -->
+
+		<div class="row">
+
+			<div class="span12">
+				<h3>Link with Mega Dropdown</h3>
+				<p>To add a mega dropdown link, add a list item (<code>&lt;li></code>) with the class <code>.mzr-drop</code> then add an anchor tag (<code>&lt;a></code>) and a <code>&lt;div></code> inside. To use the content preset styles add the class <code>.mzr-content</code> and to set the mega dropdown size use one of the following classes (ex: <code>.drop-four-columns</code>).</p>
+			</div>
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.mzr-drop</code></td>
+							<td>Required to make the dropdowns work.</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-content</code></td>
+							<td>Load preset content styles</td>
+						</tr>
+						<tr>
+							<td><code>.drop-six-columns</code></td>
+							<td>Create a dropdown box that allows up to six columns in a row</td>
+						</tr>
+						<tr>
+							<td><code>.drop-five-columns</code></td>
+							<td>Create a dropdown box that allows up to five columns in a row</td>
+						</tr>
+						<tr>
+							<td><code>.drop-four-columns</code></td>
+							<td>Create a dropdown box that allows up to four columns in a row</td>
+						</tr>
+						<tr>
+							<td><code>.drop-three-columns</code></td>
+							<td>Create a dropdown box that allows up to three columns in a row</td>
+						</tr>
+						<tr>
+							<td><code>.drop-two-columns</code></td>
+							<td>Create a dropdown box that allows up to two columns in a row</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+
+			<div class="span6">
+<pre class="prettyprint linenums">&lt;li class="mzr-drop">
+
+    &lt;a href="#">6 Columns&lt;/a>
+
+    &lt;div class="mzr-content drop-six-columns">
+        Content here ...
+    &lt;/div>
+
+&lt;/li></pre>
+			</div>
+			
+		</div>
+
+				<hr>
+
+		<!-- Links with Dropdown Levels -->
+
+		<div class="row">
+
+			<div class="span12">
+				<h3>Link with Dropdown Levels</h3>
+				<p>To add a link with dropdown levels create an unordered list (<code>&lt;ul></code>) for each dropdown level. You can align them to the right (default) or left (<code>.mzr-align-left</code>) and use as many dropdown levels as you want, there’s no limit.</p>
+			</div>
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.mzr-drop</code></td>
+							<td>Required in all <code>&lt;li></code> that have a new dropdown level.</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-levels</code></td>
+							<td>Required on the first <code>&lt;li></code>.</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-align-left</code></td>
+							<td>Align the dropdown level on the left of his parent.</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+
+			<div class="span6">
+<pre class="prettyprint linenums">&lt;li class="mzr-drop mzr-levels">
+    &lt;a href="#">Dropdown&lt;/a>
+    &lt;ul>
+        &lt;li>&lt;a href="#">First Level&lt;/a>&lt;/li>
+        &lt;li class="mzr-drop">
+            &lt;a href="#">First Level&lt;/a>
+            
+            &lt;ul>
+                &lt;li>&lt;a href="#">Second Level&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Second Level&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Second Level&lt;/a>&lt;/li>
+                &lt;li class="mzr-drop mzr-align-left">
+                    &lt;a href="#">Second Level&lt;/a>
+                   
+                    &lt;ul>
+                        &lt;li>&lt;a href="#">Third Level&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Third Level&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Third Level&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Third Level&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Third Level&lt;/a>&lt;/li>
+                    &lt;/ul>
+               
+                &lt;/li>
+                &lt;li>&lt;a href="#">Second Level&lt;/a>&lt;/li>
+            &lt;/ul>
+        
+        &lt;/li>
+        &lt;li>&lt;a href="#">First Level&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">First Level&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">First Level&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/li></pre>
+			</div>
+			
+		</div>
+
+		<hr>
+
+		<div class="row">
+			
+			<div class="span12">
+				<h3>Align Links on the Right</h3>
+				<p>To position a link to the right, add the class <code>.mzr-align-right</code> to the <code>&lt;li></code>.</p>
+			</div>
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.mzr-align-right</code></td>
+							<td>Align The link to the right.</td>
+						</tr>
+					</tbody>
+				</table>				
+			</div>
+			
+			<div class="span6">
+<pre class="prettyprint linenums">&lt;li class="mzr-align-right">&lt;a href="#">Right Link&lt;/a>&lt;/li></pre>
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div class="row">
+			
+			<div class="span12">
+				<h3>Box Columns Sizes</h3>
+				<p>Use this classes to organize the content on your mega menus.</p>
+			</div>
+
+			<div class="span12">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.six-col</code></td>
+							<td>Add a box with six columns size.</td>
+						</tr>
+						<tr>
+							<td><code>.five-col</code></td>
+							<td>Add a box with five columns size.</td>
+						</tr>
+						<tr>
+							<td><code>.four-col</code></td>
+							<td>Add a box with four columns size.</td>
+						</tr>
+						<tr>
+							<td><code>.three-col</code></td>
+							<td>Add a box with three columns size.</td>
+						</tr>
+						<tr>
+							<td><code>.two-col</code></td>
+							<td>Add a box with two columns size.</td>
+						</tr>
+						<tr>
+							<td><code>.one-col</code></td>
+							<td>Add a box with one columns size.</td>
+						</tr>
+					</tbody>
+				</table>				
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div class="row">
+			
+			<div class="span12">
+				<h3>Contact Form</h3>
+				<p>This menu have available a styled contact form. To use it copy the following code and paste it inside of <code>&lt;ul class="meganizr"></code>.</p>
+			</div>
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.mzr-drop</code></td>
+							<td>Required for dropdown to work.</td>
+						</tr>
+						<tr>
+							<td><code>.mzr-contact</code></td>
+							<td>Required if you're using the contact form.</td>
+						</tr>
+					</tbody>
+				</table>			
+			</div>
+			
+			<div class="span6">
+<pre class="prettyprint linenums">&lt;li class="mzr-drop mzr-contact">
+
+    &lt;a href="#">Contact&lt;/a>
+
+    &lt;div class="mzr-content drop-two-columns">
+
+        &lt;div class="two-col">
+            &lt;form action="#" method="#" id="mzr-contact-form">
+                &lt;input type="text" name="name" id="name" placeholder="Name">
+                &lt;input type="email" name="email" id="email" placeholder="email@email.com">
+                &lt;textarea name="message" id="message" placeholder="Message">&lt;/textarea>
+                &lt;input type="submit" value="Send Message">
+            &lt;/form>
+        &lt;/div>
+
+    &lt;/div>
+
+&lt;/li></pre>
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div class="row">
+
+			<div class="span12">
+				<h3>Search Form</h3>
+				<p>To add the search field to the menu, copy the following code.</p>
+			</div>
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Class / Id</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>.mzr-search</code></td>
+							<td>Required class so style the search from.</td>
+						</tr>
+						<tr>
+							<td><code>#search-form</code></td>
+							<td>Required id to slyle the form input.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="span6">
+<pre class="prettyprint linenums">&lt;li class="mzr-search mzr-align-right">
+
+    &lt;form action="">
+        &lt;input type="text" id="search-form" name="search-form" value="Search" onfocus="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';">
+        &lt;input type="submit" value="">
+    &lt;/form>
+
+&lt;/li></pre>
+			</div>
+				
+		</div>
+		
+	</section>
+
+	<section id="cssfiles">
+		
+		<div class="page-header"><h1>CSS Files and Structure</h1></div>
+
+		<div class="row">
+			
+			<div class="span12"><p>This menu uses two CSS files. The <code>meganizr.css</code> file contains all the styles and functionality of the menu and the <code>meganizer-ie.css</code> contains some fixes for internet explorer 8 and 7. The <code>meganizr.css</code> files is dived by topics, if you want to edit it, scroll down to the topic you’re looking for and find the CSS rule that contains that style. </p></div>
+
+			<div class="span6">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>File</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>meganizr.css</code></td>
+							<td>Contains all the Meganizr styles.</td>
+						</tr>
+						<tr>
+							<td><code>meganizr-ie.css</code></td>
+							<td>Add support for IE8 and IE7.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="span6">
+<pre class="prettyprint linenums">/* ###############################################
+
+    // MEGANIZR.CSS FILE STRUCTURE
+
+    // 1. RESET STYLES
+    // 2. NAVIGATION BAR STYLES
+    // 3. SEARCH FORM
+    // 4. DROPDOWN
+    // 5. CONTENT STYLES
+    // 6. RESPONSIVE
+    // 7. EXTRA COLOR STYLES
+
+############################################### */</pre>
+			</div>
+
+		</div>
+	
+	</section>
+
+	<section id="updates">
+		<div class="page-header"><h1>Updates</h1></div>
+
+		<h3>VERSION 1.0.2 - 03/09/2012</h3>
+		<ul>
+			<li><strong>BUGFIX:</strong> IE8 & IE7 bug on drop down levels</li>
+		</ul>
+
+		<h3>VERSION 1.0.1 - 07/08/2012</h3>
+		<ul>
+			<li><strong>BUGFIX:</strong> Missing home icon on IE7</li>
+		</ul>
+	</section>
+
+	<section id="credits">
+
+		<div class="page-header"><h1>Credits</h1></div>
+
+			<ul>
+				<li><strong>Bootstrap</strong> - <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></li>
+				<li><strong>Play Font</strong> - <a href="http://modernizr.com/">http://www.fontsquirrel.com/fonts/play</a> - <a href="http://www.fontsquirrel.com/license/play">License</a></li>
+			</ul>
+		
+	</section>
+
+	<hr>
+
+	<section>
+		<p>Once again, thank you so much for purchasing this menu. As I said at the beginning, I'd be glad to help you if you have any questions relating to this menu. No guarantees, but I'll do my best to assist. If you have a more general question relating to the items on <a href="http://codecanyon.net?ref=downv">CodeCanyon</a>, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+	</section>
+
+	<!-- Footer -->
+
+	<br><br><hr>
+
+	<footer>
+		<p class="op-fl">Copyright 2012 <a href="http://vtimbuc.net/">Valeriu Timbuc</a>. All rights reserved.</p>
+		<p class="op-fr"><a href="http://codecanyon.net/item/meganizr-responsive-css3-mega-menu/2629504?ref=downv">Item Page</a> | <a href="http://vtimbuc.ticksy.com/">Support</a></p>
+	</footer>
+
+	</div><!-- /container -->
+
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/livepreview.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			prettyPrint();
+		});
+	</script>
+
+</body>
+</html>

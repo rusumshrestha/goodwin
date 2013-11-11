@@ -1,0 +1,34 @@
+#################################################################
+	
+	ITEM NAME  : Meganizr Responsive CSS3 Mega Menu
+	ITEM URI   : http://codecanyon.net/item/meganizr-responsive-css3-mega-menu/2629504
+	VERSION    : 1.0.1
+	AUTHOR     : Valeriu Timbuc
+	AUTHOR URI : http://vtimbuc.net
+	LICENSE    : Regular License - http://codecanyon.net/licenses/regular_extended
+
+##################################################################
+
+
+
+## VERSION 1.0.2 -- 03/09/2012 ###################################
+
+- BUGFIX: IE8 & IE7 bug on drop down levels
+
+FILES UPDATED:
+- meganizr.css
+
+
+
+## VERSION 1.0.1 -- 07/08/2012 ###################################
+
+- BUGFIX: Missing home icon on IE7
+
+FILES UPDATED:
+- meganizr-ie.css
+
+
+
+## VERSION 1.0 -- 08/07/2012 #####################################
+
+- First Release

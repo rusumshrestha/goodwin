@@ -1,0 +1,357 @@
+@import url('reset.css');
+@import url('fonts.css');
+@import url('font-awesome.css');
+@import url('menu.css');
+@import url('layout.css');
+@import url('block-sets.css');
+@import url('responsive.css');
+
+@text-d:'open_sansregular';
+@text-i:'open_sansitalic';
+@text-b-i:'open_sansbold_italic';
+@text-b:'open_sansbold';
+@text-icon:'FontAwesome';
+
+@text-h:24px;
+@text-p:13px;
+@text-alt:11px;
+@text-foot:9px;
+
+@c-h:#000000;
+@c-p:#606060;
+@c-l-h:#FFFFFF;
+@c-h-1:#ff7e00;
+
+@bg-1:#000000;
+@bg-2:#FFFFFF;
+@bg-3:#ff7e00;
+@bg-4:#efefef;
+
+@border:#959595;
+
+@auto:0 auto;
+@m-t-20:20px;
+@m-b-20:20px;
+@m-r-20:20/1000%;
+@m-l-20:20/1000%;
+@m-t-b-20:20px 0;
+@m-r-l-20:0 20*100/1000%;
+@m-a-20:20px 20/1000%;
+@p-t-20:20px;
+@p-b-20:20px;
+@p-r-20:20/1000%;
+@p-l-20:20/1000%;
+@p-a-20:20px 20/1000%;
+@p-r-l-20:0 20*100/1000%;
+
+@pl:left;
+@pr:right;
+@pc:center;
+@pj:justify;
+@cb:both;
+@oh:hidden;
+@di:inline;
+@db:block;
+@dib:inline-block;
+@dt:table;
+@dn:none;
+
+@w-100:100%;
+@w-w:1000/16em;
+@c-1:((65*100)/1000%);
+@c-2:(100*((65*2)+20))/1000%;;
+@c-3:(100*((65*3)+40))/1000%;
+@c-4:(100*((65*4)+60))/1000%;
+@c-5:(100*((65*5)+80))/1000%;
+@c-6:(100*((65*6)+100))/1000%;
+@c-7:(100*((65*7)+120))/1000%;
+@c-8:(100*((65*8)+140))/1000%;
+@c-9:(100*((65*9)+160))/1000%;
+@c-10:(100*((65*10)+180))/1000%;
+@c-11:(100*((65*11)+200))/1000%;
+@c-12:(100*((65*12)+220))/1000%;
+@one-fourth:(100*((65*3)+40))/1000%;
+@one-third:(100*((65*4)+60))/1000%;
+@one-half:(100*((65*6)+100))/1000%;
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+    text-shadow: @string;
+}
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-bottomright:     @bottomright;
+	-moz-border-radius-bottomleft:      @bottomleft;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+
+	-moz-background-clip:    padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip:         padding-box; 
+}
+
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+ 	background-color: @startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+	background-image: -moz-linear-gradient(left, @startColor, @endColor);
+	background-image: -ms-linear-gradient(left, @startColor, @endColor);
+	background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
+}
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+.transform(@string){
+	-webkit-transform: @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+}
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.skew (@deg, @deg2) {
+	-webkit-transform:       skew(@deg, @deg2);
+	-moz-transform: 	 skew(@deg, @deg2);
+	-ms-transform: 		 skew(@deg, @deg2);
+	-o-transform: 		 skew(@deg, @deg2);
+}
+.translate (@x, @y:0) {
+	-webkit-transform:       translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+.translate3d (@x, @y: 0, @z: 0) {
+	-webkit-transform:       translate3d(@x, @y, @z);
+	-moz-transform: 	 translate3d(@x, @y, @z);
+	-ms-transform: 		 translate3d(@x, @y, @z);
+	-o-transform: 		 translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+	-webkit-perspective: 	@value;
+	-moz-perspective: 	@value;
+	-ms-perspective: 	@value;
+	perspective: 		@value;
+}
+.transform-origin (@x:center, @y:center) {
+	-webkit-transform-origin: @x @y;
+	-moz-transform-origin:    @x @y;
+	-ms-transform-origin:     @x @y;
+	-o-transform-origin:      @x @y;
+}
+
+/*----------------------- HTML TAGS -----------------------*/
+body{
+    font-size:100%;
+    color:@c-p;
+    line-height:20px;
+    font-family:@text-d;
+}
+h1,h2,h3,h4,h5,h6{color:@c-h; line-height:20px; font-family:@text-d;}
+h1{font-size:24px;}
+h2{font-size:18px;}
+p{font-family:@text-d; color:@c-p; line-height:20px; font-size:13px;}
+a{text-decoration:@dn; font-size:13px; color:@c-h; font:@text-d;
+    &:hover{color:@c-l-h;}
+    &:visited{outline:@dn}
+}
+input,textarea{
+    font:13px @text-d;
+    color:@c-p;
+    outline:@dn;
+    &:focus{box-shadow:@dn; outline:@dn;}
+}
+
+/*----------------------- FLOAT AND CLEAR -----------------------*/
+.pull-left{float:@pl}
+.pull-right{float:@pr}
+.cl{clear:@pl}
+.cl{clear:@pr}
+.cb{clear:@cb}
+
+/*----------------------- MAIN-WRAPPER PAGE -----------------------*/
+.main-wrapper{width:@w-100; background:url(../images/pattern/pw-pattern.png)repeat;}
+.page{width:@w-100;}
+
+/*----------------------- HEADER-TOP -----------------------*/
+.header-top-container-wrapper{
+    width:@w-100;
+    background:@bg-1;
+    min-height:40px;
+    height:auto !important;
+    height:40px;
+    .header-top-container{
+        max-width:@w-w;
+        margin:@auto;
+        min-height:40px;
+        height:auto !important;
+        height:40px;
+        .login-section{
+            height:40px;
+            ul{
+                margin:0;
+                padding:0;
+                overflow:@oh;
+                width:@w-100;
+                li{
+                    float:@pl;
+                    height:40px;
+                    padding:0 15*100/150%;
+                    a{
+                        color:@c-l-h;
+                        display:@db;
+                        line-height:40px;
+                        font-family:@text-b;
+                    }
+                    &:hover{
+                        background:@bg-3;
+                        a{color:@c-h;}
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------------------- HEADER -----------------------*/
+.header-container-wrapper{
+    width:@w-100;
+    background:rgba(255,255,255,.7);
+    border-top:1px solid @border;
+    border-bottom:1px solid @border;
+    min-height:60px;
+    height:auto !important;
+    height:60px;
+    .header-container{
+        max-width:@w-w;
+        margin:@auto;
+        min-height:60px;
+        height:auto !important;
+        height:60px;
+        .logo{display:@db; 
+            h1{height:60px; line-height:70px;
+                a{display:block;
+                }
+            }
+        }
+    }
+}
+/*----------------------- SLOGAN MESSAGE CONTAINER -----------------------*/
+.slider-container-wrapper{
+    width:@w-100;
+    overflow:hidden;
+    border-bottom:1px solid @border;
+    .slider-container{
+        margin:@auto;
+        max-width:@w-w;
+        .slider{
+            width:@w-100;
+            height:300px;
+            margin-bottom:5px;
+            display:@db;
+        }
+        .slogan-message-wrapper{
+            width:@w-100;
+            display:@db;
+            background:@bg-3;
+            padding:20px 20*100/1000%;
+            .box-sizing (border-box);
+            .slogan-message{
+                font:18px/20px @text-b-i;
+                color:@c-l-h;
+                text-align:@pc;
+                }
+        }
+    }
+}
+
+/*----------------------- DIVIDER -----------------------*/
+.divider{
+    height:1px;
+    max-width:@w-w;
+    background:#959595;
+    margin:40px 0;
+}
+
+// for iphone
+@media only screen and (max-width: 479px) and (min-width: 320px){
+    .main-wrapper{
+        max-width:479px;
+        .page{
+            width:100%;
+            .col-main{width:@w-100; padding:0 10px; .box-sizing(border-box);}
+        }
+    }
+}
