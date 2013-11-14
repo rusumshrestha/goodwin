@@ -12,8 +12,17 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 <script src="/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jcarousellite.js"></script>
 <script type="text/javascript" src="js/goodwin.js"></script>
 <script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$(".default .jCarouselLite").jCarouselLite({
+btnNext: ".default .next",
+btnPrev: ".default .prev"
+});
+});
+</script>
 </head>
 
 <body>
@@ -121,58 +130,111 @@
               </ul>
               <div class="divider"></div>
             </div>
-            <!-- <div class="recent-works c-12">
-            	<ul class="bxslider">
-                  <li><img src="images/pic-1.jpg"></li>
-                  <li><img src="images/pic-1.jpg"></li>
-                  <li><img src="images/pic-1.jpg"></li>
-                  <li><img src="images/pic-1.jpg"></li>
-                </ul>
-            </div> -->
+            <div class="recent-works c-12">
+              <div class="carousel default">
+                <button class="prev">&lt;&lt;</button>
+                <button class="next">&gt;&gt;</button>
+                <div class="jCarouselLite">
+                  <ul>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                  </ul>
+                </div>
+                
+                <div class="clear"></div>
+              </div>
+            </div>
             <div class="blog-service-block c-12">
-            	<div class="blog-block pull-left c-8">
-                	<div class="blog-block-title">Blog</div>
-                    <div class="blog-block-content">
-                    	<div class="blog-content">
-                        	<div class="blog-img-container pull-left"><img src="images/blog-img/img-1.png" alt="Blog Img"></div>
-                    		<div class="content pull-right">
-                                <div class="blog-title">
-                                    <h2><a href="#">This is Photoshop's version  of Lorem Ipsum.</a></h2>
-                                </div>
-                                <div class="blog-text"><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor..</p></div>
-                                <div class="blog-detail">
-                                    <ul>
-                                        <li><a href="#"><span class="fa fa-calendar"></span>31 December 2013</a></li>
-                                        <li class="even"><a href="#"><span class="fa fa-user"></span>Admin</a></li>
-                                        <li class="b-b-none"><a href="#"><span class="fa fa-comments-o"></span>31 comments</a></li>
-                                        <li class="b-b-none"><a href="#">Read More<span class="fa fa-caret-right"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                    	</div>
-                        <div class="blog-divider"></div>
-                        <div class="blog-content">
-                        	<div class="blog-img-container pull-left"><img src="images/blog-img/img-1.png" alt="Blog Img"></div>
-                    		<div class="content pull-right">
-                                <div class="blog-title">
-                                    <h2><a href="#">This is Photoshop's version  of Lorem Ipsum.</a></h2>
-                                </div>
-                                <div class="blog-text"><p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor..</p></div>
-                                <div class="blog-detail">
-                                    <ul>
-                                        <li><a href="#"><span class="fa fa-calendar"></span>31 December 2013</a></li>
-                                        <li class="even"><a href="#"><span class="fa fa-user"></span>Admin</a></li>
-                                        <li class="b-b-none"><a href="#"><span class="fa fa-comments-o"></span>31 comments</a></li>
-                                        <li class="b-b-none"><a href="#">Read More<span class="fa fa-caret-right"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                    	</div>
+              <div class="blog-block pull-left c-8">
+                <div class="blog-block-title">Blog</div>
+                <div class="blog-block-content">
+                  <div class="blog-content">
+                    <div class="blog-img-container pull-left"><img src="images/blog-img/img-1.png" alt="Blog Img"></div>
+                    <div class="content pull-right">
+                      <div class="blog-title">
+                        <h2><a href="#">This is Photoshop's version  of Lorem Ipsum.</a></h2>
+                      </div>
+                      <div class="blog-text">
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor..</p>
+                      </div>
+                      <div class="blog-detail">
+                        <ul>
+                          <li><a href="#"><span class="fa fa-calendar"></span>31 December 2013</a></li>
+                          <li class="even"><a href="#"><span class="fa fa-user"></span>Admin</a></li>
+                          <li class="b-b-none"><a href="#"><span class="fa fa-comments-o"></span>31 comments</a></li>
+                          <li class="b-b-none"><a href="#">Read More<span class="fa fa-caret-right"></span></a></li>
+                        </ul>
+                      </div>
                     </div>
+                  </div>
+                  <div class="blog-divider"></div>
+                  <div class="blog-content">
+                    <div class="blog-img-container pull-left"><img src="images/blog-img/img-1.png" alt="Blog Img"></div>
+                    <div class="content pull-right">
+                      <div class="blog-title">
+                        <h2><a href="#">This is Photoshop's version  of Lorem Ipsum.</a></h2>
+                      </div>
+                      <div class="blog-text">
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor..</p>
+                      </div>
+                      <div class="blog-detail">
+                        <ul>
+                          <li><a href="#"><span class="fa fa-calendar"></span>31 December 2013</a></li>
+                          <li class="even"><a href="#"><span class="fa fa-user"></span>Admin</a></li>
+                          <li class="b-b-none"><a href="#"><span class="fa fa-comments-o"></span>31 comments</a></li>
+                          <li class="b-b-none"><a href="#">Read More<span class="fa fa-caret-right"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="service-block pull-right c-4" style="background:green">
-                	sdfjlksadflkjsdf
+              </div>
+              <div class="service-block pull-right c-4">
+                <div class="ac-container">
+                  <div>
+                    <input id="ac-1" name="accordion-1" type="radio" checked >
+                    <label for="ac-1">HTML5</label>
+                    <div class="accordion-item">
+                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh </p>
+                    </div>
+                  </div>
+                  <div>
+                    <input id="ac-2" name="accordion-1" type="radio" >
+                    <label for="ac-2">Joomla</label>
+                    <div class="accordion-item">
+                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
+                    </div>
+                  </div>
+                  <div>
+                    <input id="ac-3" name="accordion-1" type="radio">
+                    <label for="ac-3">Wordpress</label>
+                    <div class="accordion-item">
+                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh </p>
+                    </div>
+                  </div>
+                  <div>
+                    <input id="ac-4" name="accordion-1" type="radio">
+                    <label for="ac-4">Photography</label>
+                    <div class="accordion-item">
+                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh </p>
+                    </div>
+                  </div>
+                  <div>
+                    <input id="ac-5" name="accordion-1" type="radio">
+                    <label for="ac-5">Responsive Web Design</label>
+                    <div class="accordion-item">
+                      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -180,10 +242,5 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-$(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
-</script>
 </body>
 </html>

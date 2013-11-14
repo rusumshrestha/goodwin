@@ -13,6 +13,14 @@
 
 @import url('responsive.css');
 /*----------------------- HTML TAGS -----------------------*/
+html,
+html a {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */
+
+}
 body {
   font-size: 100%;
   color: #606060;
@@ -193,9 +201,9 @@ textarea:focus {
   background: #959595;
   margin: 40px 0;
 }
-@media only screen and (max-width: 479px) and (min-width: 320px) {
+@media only screen and (max-width: 480px) and (min-width: 320px) {
   .main-wrapper {
-    max-width: 479px;
+    max-width: 480px;
   }
   .main-wrapper .page {
     width: 100%;

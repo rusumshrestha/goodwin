@@ -214,6 +214,11 @@
 }
 
 /*----------------------- HTML TAGS -----------------------*/
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+}
 body{
     font-size:100%;
     color:@c-p;
@@ -346,9 +351,9 @@ input,textarea{
 }
 
 // for iphone
-@media only screen and (max-width: 479px) and (min-width: 320px){
+@media only screen and (max-width: 480px) and (min-width: 320px){
     .main-wrapper{
-        max-width:479px;
+        max-width:480px;
         .page{
             width:100%;
             .col-main{width:@w-100; padding:0 10px; .box-sizing(border-box);}
