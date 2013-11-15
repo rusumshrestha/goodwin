@@ -31,3 +31,11 @@ $(window).load(function(){
 	}
   });
 });
+
+// JS FOR FLEXSLIDER
+$(document).ready(function() {
+$(".default .jCarouselLite").jCarouselLite({
+btnNext: ".default .next",
+btnPrev: ".default .prev"
+});
+});

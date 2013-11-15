@@ -1,86 +1,163 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
-.blog-block {
+.recent-work {
   overflow: hidden;
 }
-.blog-block .blog-block-title {
+.recent-work .recent-work-title {
   font: 24px/1 'open_sansregular';
   color: #000000;
   margin-bottom: 20px;
 }
-.blog-block .blog-block-content {
+.recent-work .carousel.default {
   width: 100%;
   overflow: hidden;
 }
-.blog-block .blog-block-content .blog-content {
+.recent-work .carousel.default .jCarouselLite {
+  width: 62.5em !important;
+  overflow: hidden;
+}
+.recent-work .carousel.default .jCarouselLite ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
   overflow: hidden;
 }
-.blog-block .blog-block-content .blog-content .blog-img-container {
+.recent-work .carousel.default .jCarouselLite ul li {
+  width: 23.5%;
+  float: left;
+  height: auto !important;
+  margin-right: 20px;
+}
+.recent-work .carousel.default .jCarouselLite ul li .work-div {
+  display: block;
+  background: #efefef;
+  border-bottom: 2px solid #959595;
+}
+.recent-work .carousel.default .jCarouselLite ul li .work-div .work-img-conatiner {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+.recent-work .carousel.default .jCarouselLite ul li .work-div .work-img-conatiner img {
+  width: 100%;
+  height: 200px;
+}
+.recent-work .carousel.default .jCarouselLite ul li .work-div .project-name {
+  font: 18px/21px 'open_sansregular';
+  color: #ff7e00;
+  text-align: center;
+  display: block;
+  height: 78px;
+  padding: 18px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.recent-work .carousel.default .jCarouselLite ul li .work-div .project-name span {
+  display: block;
+  font: 13px 'open_sansregular';
+  color: #606060;
+  margin-top: 9px;
+}
+.recent-work .carousel.default .jCarouselLite ul li .work-div:hover {
+  background: url(../images/carousel-hover.png) repeat-x transparent;
+}
+.recent-work .carousel.default .jCarouselLite ul li .work-div:hover .work-img-conatiner img {
+  opacity: .3;
+}
+.blog-service-block {
+  overflow: hidden;
+}
+.blog-service-block .blog-block {
+  overflow: hidden;
+}
+.blog-service-block .blog-block .blog-block-title {
+  font: 24px/1 'open_sansregular';
+  color: #000000;
+  margin-bottom: 20px;
+}
+.blog-service-block .blog-block .blog-block-content {
+  width: 100%;
+  overflow: hidden;
+}
+.blog-service-block .blog-block .blog-block-content .blog-content {
+  width: 100%;
+  overflow: hidden;
+}
+.blog-service-block .blog-block .blog-block-content .blog-content .blog-img-container {
   width: 22.727272727272727%;
   height: 140px;
 }
-.blog-block .blog-block-content .blog-content .blog-img-container img {
+.blog-service-block .blog-block .blog-block-content .blog-content .blog-img-container img {
   max-width: 100%;
 }
-.blog-block .blog-block-content .blog-content .content {
+.blog-service-block .blog-block .blog-block-content .blog-content .content {
   width: 74.24242424242425%;
   overflow: hidden;
 }
-.blog-block .blog-block-content .blog-content .content .blog-title {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-title {
   margin-bottom: 20px;
 }
-.blog-block .blog-block-content .blog-content .content .blog-title h2 a {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-title h2 a {
   font: 18px/1 'open_sansregular';
   color: #ff7e00;
 }
-.blog-block .blog-block-content .blog-content .content .blog-title h2 a:hover {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-title h2 a:hover {
   text-decoration: underline;
   color: #000000;
 }
-.blog-block .blog-block-content .blog-content .content .blog-text {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-text {
   width: 100%;
   overflow: hidden;
   font: 13px/20px 'open_sansregular';
   color: #606060;
   margin-bottom: 20px;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail {
   width: 100%;
   border-top: 1px solid #959595;
   border-bottom: 1px solid #959595;
   overflow: hidden;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail ul {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail ul {
   list-style: none;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail ul li {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail ul li {
   float: left;
   border-right: 1px solid #959595;
   padding: 0 21px;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail ul li a {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail ul li a {
   display: block;
   font: 11px/38px 'open_sansregular';
   color: #606060;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail ul li a:hover {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail ul li a:hover {
   color: #ff7e00;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail ul li a span.fa {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail ul li a span.fa {
   font-size: 13px;
   margin-right: 5px;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail ul li:last-child {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail ul li:last-child {
   border-right: none;
 }
-.blog-block .blog-block-content .blog-content .content .blog-detail ul li:last-child a span.fa {
+.blog-service-block .blog-block .blog-block-content .blog-content .content .blog-detail ul li:last-child a span.fa {
   margin-right: 0;
   margin-left: 5px;
 }
-.blog-block .blog-block-content .blog-divider {
+.blog-service-block .blog-block .blog-block-content .blog-divider {
   height: 5px;
   width: 100%;
   background: #eeeeee;
   overflow: hidden;
   margin: 40px 0;
+}
+.blog-service-block .service-block {
+  overflow: hidden;
+}
+.blog-service-block .service-block .service-block-title {
+  font: 24px/1 'open_sansregular';
+  color: #000000;
+  margin-bottom: 20px;
 }

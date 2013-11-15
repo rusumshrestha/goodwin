@@ -9,19 +9,19 @@
 <link href="css/flexslider.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style6.css">
 <link href="css/jquery.bxslider.css" rel="stylesheet">
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-<script src="/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jcarousellite.js"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="js/goodwin.js"></script>
 <script type="text/javascript" src="js/html5.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-$(".default .jCarouselLite").jCarouselLite({
-btnNext: ".default .next",
-btnPrev: ".default .prev"
-});
-});
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: false});
+			});
 </script>
 </head>
 
@@ -130,25 +130,26 @@ btnPrev: ".default .prev"
               </ul>
               <div class="divider"></div>
             </div>
-            <div class="recent-works c-12">
+            <div class="recent-work c-12">
+              <div class="recent-work-title">Recent Works</div>
               <div class="carousel default">
-                <button class="prev">&lt;&lt;</button>
-                <button class="next">&gt;&gt;</button>
+                <div class="carousel-buttons">
+                  <button class="prev">&lt;&lt;</button>
+                  <button class="next">&gt;&gt;</button>
+                </div>
                 <div class="jCarouselLite">
-                  <ul>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
-                    <li><img src="images/pic-1.jpg" alt="" width="150"><span style="display:block">This is test</span></li>
+                  <ul class="gallery">
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
+                    <li> <a href="images/blog-img/img-1.png" rel="prettyPhoto[gallery1]" class="work-div"><span class="work-img-conatiner"><img src="images/pic-1.jpg" alt="pic-1"></span><span class="project-name">This is test<span>Web Design</span></span></a> </li>
                   </ul>
                 </div>
-                
-                <div class="clear"></div>
+                <div class="divider"></div>
               </div>
             </div>
             <div class="blog-service-block c-12">
@@ -197,6 +198,7 @@ btnPrev: ".default .prev"
                 </div>
               </div>
               <div class="service-block pull-right c-4">
+                <div class="service-block-title">Our Services</div>
                 <div class="ac-container">
                   <div>
                     <input id="ac-1" name="accordion-1" type="radio" checked >
